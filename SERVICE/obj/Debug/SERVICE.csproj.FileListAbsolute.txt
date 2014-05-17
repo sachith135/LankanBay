@@ -79,3 +79,12 @@ E:\LankanBay.Com\SERVICE\bin\DOMAIN.pdb
 E:\LankanBay.Com\SERVICE\obj\Debug\ResolveAssemblyReference.cache
 E:\LankanBay.Com\SERVICE\obj\Debug\SERVICE.dll
 E:\LankanBay.Com\SERVICE\obj\Debug\SERVICE.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\SERVICE.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\SERVICE.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\DATA.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\DOMAIN.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\DATA.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\bin\DOMAIN.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\obj\Debug\SERVICE.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\obj\Debug\SERVICE.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\SERVICE\obj\Debug\SERVICE.pdb

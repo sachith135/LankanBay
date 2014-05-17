@@ -43,3 +43,8 @@ E:\LankanBay.Com\DOMAIN\bin\DOMAIN.pdb
 E:\LankanBay.Com\DOMAIN\obj\Debug\ResolveAssemblyReference.cache
 E:\LankanBay.Com\DOMAIN\obj\Debug\DOMAIN.dll
 E:\LankanBay.Com\DOMAIN\obj\Debug\DOMAIN.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\DOMAIN\bin\DOMAIN.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\DOMAIN\bin\DOMAIN.pdb
+C:\Users\ASUS\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.dll
+C:\Users\ASUS\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.pdb
