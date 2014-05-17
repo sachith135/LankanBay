@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sitemaster.master.cs" Inherits="LankanBay.masterpages.sitemaster" %>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<%@ Register src="../navigationbar.ascx" tagname="navigationbar" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>LankanBay.Com ::.</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../styles/sitemaster.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/adminmaster.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    body
+    {
+        margin:0px;
+        padding:0px;
+        margin:auto;
+        text-align: left;
+    }
+    td
+    {
+        vertical-align:top;
+            text-align: left;
+        }
+        .style1
+        {
+            width: 100%;
+            text-align: left;
+        }
+        .style2
+        {
+            height: 27px;
+            text-align: left;
+        }
+        .style3
+        {
+            width: 188px;
+            text-align: left;
+        }
+        .style4
+        {
+            width: 20px;
+            text-align: left;
+        }
+        .style5
+        {
+            width: 543px;
+            text-align: left;
+        }
+        .style6
+        {
+            height: 28px;
+            text-align: left;
+        }
+        .style7
+        {
+            text-align: left;
+        }
+        .style8
+        {
+            height: 28px;
+        }
+        </style>
+   
+
+</head>
+
+<body style="margin-right:0px;">
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+    </telerik:RadScriptManager>
+
+
+    <div>
+        <table cellpadding="5" cellspacing="0" class="style1">
+
+            <tr class="topMenuArea">
+            <td colspan="3"  style="border-bottom:2px solid #CCC">
+
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td width="960px"  align="center">
+                  
+                        <!-- TOP MENU -->                   
+
+                            <table cellpadding="0" cellspacing="0" width="960px">
+                                <tr>
+                                    <td width="12%" >
+                                    |&nbsp;<asp:LinkButton 
+                                            ID="lnkBtnLogInOrLogOut" runat="server" onclick="LinkButton1_Click" 
+                                            Font-Bold="True">Sign in or Register</asp:LinkButton>
+                                    </td>
+
+                                    <td width="12%">
+                                    &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                                        Customer Support
+                                    </td>
+
+                                    <td width="12%" class="style7">
+                                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                        <asp:LinkButton ID="btnDailyDeals" runat="server" Font-Bold="True" 
+                                            onclick="btnDailyDeals_Click">Daily Deals</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;</td>
+
+                                    <td width="5%">
+                                    </td>
+
+                                    <td width="12%" style="text-align:center">
+                                    |&nbsp;&nbsp; &nbsp; 
+                                        <asp:LinkButton ID="btnYourCart" runat="server" Font-Bold="True" 
+                                            onclick="btnYourCart_Click">Your Cart (0)</asp:LinkButton>
+                                    </td>
+
+                                    <td width="12%">
+                                        |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                        <asp:LinkButton ID="lnkBtnNotification" runat="server" 
+                                            onclick="lnkBtnNotification_Click" Font-Bold="True"> Notifications (0)</asp:LinkButton>&nbsp;&nbsp;&nbsp; |</td>
+
+                                    <td width="12%" style="text-align:center">
+                                        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                        
+                                        <asp:LinkButton ID="lnkBtnMySrilankanBay" runat="server" 
+                                            onclick="lnkBtnMySrilankanBay_Click" Font-Bold="True">My Srilankan Bay</asp:LinkButton>|
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                        <!-- TOP MENU -->
+
+                        </td>
+
+                        <td>
+                        &nbsp;
+                       </td>
+                    </tr>
+                </table>
+
+            </td>
+            </tr>
+
+
+            <tr class="headerWithLog">
+                <td class="style2">
+                    </td>
+                <td class="style2" width="960px" style="padding-left:5px;padding-right:1px; padding-top:10px; ">
+
+                 <!-- HEADER CONTENT -->
+
+
+
+                 <!-- HEADER CONTENT -->                 
+
+
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td class="style3">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/newlogo.png" Width="230px" 
+                                    Height="46px" />
+
+                             </td>
+                            <td class="style4">
+                                &nbsp;</td>
+                            <td class="style5" align="center">
+                                <telerik:RadTextBox ID="txtSearch" Runat="server" Font-Size="Medium" 
+                                    Width="580px" EmptyMessage="Search ..." MaxLength="100">
+                                </telerik:RadTextBox>
+                            </td>
+                            <td class="style4">
+                                &nbsp;</td>
+                            <td style="padding-right:2px;" align="right">
+                                <asp:Button ID="btnSearch" runat="server" Text="SEARCH" Height="29"
+                                    Width="130px" onclick="btnSearch_Click" CssClass="button" />
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </td>
+                <td class="style2">
+                    </td>
+            </tr>
+
+
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style2" width="960px" align="center">
+                <!-- Navigation bar -->
+               
+                <!-- Navigation bar -->
+                  
+                    <uc2:navigationbar ID="navigationbar1" runat="server" />
+                  
+                </td>
+                <td class="style2">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style6">
+                    </td>
+               <!-- MIDDLE CONTENT -->
+                <td class="style6" style="text-align:left">
+               
+                    
+
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+               
+                    
+
+
+                 </td>
+                 <!-- MIDDLE CONTENT -->
+                <td class="style6">
+                    </td>
+            </tr>
+            <tr style="background-color:#CCC">
+                <td class="style8">
+                    </td>
+                <td class="style8">
+                    </td>
+                <td class="style8">
+                    </td>
+            </tr>
+            <tr style="background-color:Gray">
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <telerik:RadWindow ID="RadWindow1" runat="server">
+    </telerik:RadWindow>
+    <telerik:RadWindowManager ID="RadWindowManager1" runat="server">
+    </telerik:RadWindowManager>
+
+    </form>
+</body>
+</html>

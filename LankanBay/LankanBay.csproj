@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAE1E7D1-224A-4B83-8005-BC9FD0C6FA18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LankanBay</RootNamespace>
+    <AssemblyName>LankanBay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.Web.UI, Version=2010.1.519.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin_add_catrgory.aspx.cs">
+      <DependentUpon>admin_add_catrgory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_add_catrgory.aspx.designer.cs">
+      <DependentUpon>admin_add_catrgory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_add_subcatrgory.aspx.cs">
+      <DependentUpon>admin_add_subcatrgory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_add_subcatrgory.aspx.designer.cs">
+      <DependentUpon>admin_add_subcatrgory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\dataset\mastertables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mastertables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MessageBoxTemplete.aspx.cs">
+      <DependentUpon>MessageBoxTemplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MessageBoxTemplete.aspx.designer.cs">
+      <DependentUpon>MessageBoxTemplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\navigationbar.ascx.cs">
+      <DependentUpon>navigationbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\navigationbar.ascx.designer.cs">
+      <DependentUpon>navigationbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\rpt_BusinessPartnerAddressDetails.cs">
+      <DependentUpon>rpt_BusinessPartnerAddressDetails.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="admin\reports\rpt_ItemDetails1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ItemDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\reports\rpt_ItemPurchasingFeedbackDetails1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ItemPurchasingFeedbackDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\reports\rpt_ItemPurchasingFeedbackTypeDetails1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ItemPurchasingFeedbackTypeDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\reports\rpt_SubCategoryDetails.cs">
+      <DependentUpon>rpt_SubCategoryDetails.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="admin\reports\rpt_CategoryDetails.cs">
+      <DependentUpon>rpt_CategoryDetails.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="admin\reports\rpt_BusinessPartnerReferenceDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_BusinessPartnerReferenceDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\reports\rpt_UserDetails1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_UserDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\reprot_viwer.aspx.cs">
+      <DependentUpon>reprot_viwer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reprot_viwer.aspx.designer.cs">
+      <DependentUpon>reprot_viwer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sup_additem.aspx.cs">
+      <DependentUpon>sup_additem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sup_additem.aspx.designer.cs">
+      <DependentUpon>sup_additem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sup_additemimages.aspx.cs">
+      <DependentUpon>sup_additemimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sup_additemimages.aspx.designer.cs">
+      <DependentUpon>sup_additemimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="breadcrumb.ascx.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="breadcrumb.ascx.designer.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="bsp_seller_profile.aspx.cs">
+      <DependentUpon>bsp_seller_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bsp_seller_profile.aspx.designer.cs">
+      <DependentUpon>bsp_seller_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bsp_customer_profile.aspx.cs">
+      <DependentUpon>bsp_customer_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bsp_customer_profile.aspx.designer.cs">
+      <DependentUpon>bsp_customer_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_on_delivery.aspx.cs">
+      <DependentUpon>pay_on_delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_on_delivery.aspx.designer.cs">
+      <DependentUpon>pay_on_delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paypal_late_payment.aspx.cs">
+      <DependentUpon>paypal_late_payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paypal_late_payment.aspx.designer.cs">
+      <DependentUpon>paypal_late_payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment_status.aspx.cs">
+      <DependentUpon>payment_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment_status.aspx.designer.cs">
+      <DependentUpon>payment_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellers_other_item.aspx.cs">
+      <DependentUpon>sellers_other_item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellers_other_item.aspx.designer.cs">
+      <DependentUpon>sellers_other_item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterpages\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterpages\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="masterpages\sitemaster.Master.cs">
+      <DependentUpon>sitemaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterpages\sitemaster.Master.designer.cs">
+      <DependentUpon>sitemaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="navigationbar.ascx.cs">
+      <DependentUpon>navigationbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="navigationbar.ascx.designer.cs">
+      <DependentUpon>navigationbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="paypal.aspx.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paypal.aspx.designer.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subcategory.aspx.cs">
+      <DependentUpon>subcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subcategory.aspx.designer.cs">
+      <DependentUpon>subcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userregistration.aspx.cs">
+      <DependentUpon>userregistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userregistration.aspx.designer.cs">
+      <DependentUpon>userregistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewitem.aspx.cs">
+      <DependentUpon>viewitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewitem.aspx.designer.cs">
+      <DependentUpon>viewitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yourcart.aspx.cs">
+      <DependentUpon>yourcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yourcart.aspx.designer.cs">
+      <DependentUpon>yourcart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\admin_add_catrgory.aspx" />
+    <Content Include="admin\admin_add_subcatrgory.aspx" />
+    <Content Include="admin\MessageBoxTemplete.aspx" />
+    <Content Include="admin\navigationbar.ascx" />
+    <Content Include="admin\reprot_viwer.aspx" />
+    <Content Include="admin\sup_additem.aspx" />
+    <Content Include="admin\sup_additemimages.aspx" />
+    <Content Include="breadcrumb.ascx" />
+    <Content Include="bsp_seller_profile.aspx" />
+    <Content Include="category.aspx" />
+    <Content Include="bsp_customer_profile.aspx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="images\back.png" />
+    <Content Include="images\changepaymentoption.png" />
+    <Content Include="images\paymentoption_payondelivery.png" />
+    <Content Include="images\payondelevery.png" />
+    <Content Include="pay_on_delivery.aspx" />
+    <Content Include="paypal_late_payment.aspx" />
+    <Content Include="images\bspdefaultimage.png" />
+    <Content Include="images\rating_images\bad.ico" />
+    <Content Include="images\rating_images\good.ico" />
+    <Content Include="images\rating_images\nithergoodorbad.ico" />
+    <Content Include="images\rating_images\notbad.ico" />
+    <Content Include="images\rating_images\verybad.ico" />
+    <Content Include="images\rating_images\verygood.ico" />
+    <Content Include="payment_status.aspx" />
+    <Content Include="sellers_other_item.aspx" />
+    <Content Include="css\dcmegamenu.css" />
+    <Content Include="css\skins\images\2bg_light_blue.png" />
+    <Content Include="css\skins\images\arrow.png" />
+    <Content Include="css\skins\images\arrow_off.png" />
+    <Content Include="css\skins\images\arrow_on.png" />
+    <Content Include="css\skins\images\bg_black.png" />
+    <Content Include="css\skins\images\bg_blue.png" />
+    <Content Include="css\skins\images\bg_green.png" />
+    <Content Include="css\skins\images\bg_grey.png" />
+    <Content Include="css\skins\images\bg_mega_hdr.png" />
+    <Content Include="css\skins\images\bg_mega_hdr_full.png" />
+    <Content Include="css\skins\images\bg_mega_hdr_on.png" />
+    <Content Include="css\skins\images\bg_orange.png" />
+    <Content Include="css\skins\images\bg_red.png" />
+    <Content Include="css\skins\images\bg_sub.png" />
+    <Content Include="css\skins\images\bg_sub_left.png" />
+    <Content Include="css\skins\images\bg_white.png" />
+    <Content Include="css\skins\white.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="images\addtocart.png" />
+    <Content Include="images\administrationpanel.png" />
+    <Content Include="images\buyitnow.png" />
+    <Content Include="images\checkout.png" />
+    <Content Include="images\continueshopping.png" />
+    <Content Include="images\delete.ico" />
+    <Content Include="images\delevery.png" />
+    <Content Include="images\edit.ico" />
+    <Content Include="images\error.png" />
+    <Content Include="images\happy100.png" />
+    <Content Include="images\information.png" />
+    <Content Include="images\loginbg.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logoforreports.jpg" />
+    <Content Include="images\negetive.png" />
+    <Content Include="images\newlogo.png" />
+    <Content Include="images\noimage.png" />
+    <Content Include="images\paymentoption.png" />
+    <Content Include="images\paymentoption_combank.png" />
+    <Content Include="images\paymentoption_paypal.png" />
+    <Content Include="images\paymentoption_sampathbank.png" />
+    <Content Include="images\paynow.png" />
+    <Content Include="images\paypalbackground.png" />
+    <Content Include="images\postive.png" />
+    <Content Include="images\price.png" />
+    <Content Include="images\question.png" />
+    <Content Include="images\rateditem.png" />
+    <Content Include="images\sad100.png" />
+    <Content Include="images\shipping.png" />
+    <Content Include="images\shoppingcart.png" />
+    <Content Include="images\slider1.png" />
+    <Content Include="images\slider2.png" />
+    <Content Include="images\succsses.png" />
+    <Content Include="images\toprateditem.png" />
+    <Content Include="images\topratedseller.png" />
+    <Content Include="images\userresgistration.png" />
+    <Content Include="images\warnning.png" />
+    <Content Include="js\jquery.dcmegamenu.1.3.3.js" />
+    <Content Include="js\jquery.dcmegamenu.1.3.3.min.js" />
+    <Content Include="js\jquery.elevatezoom.min.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.hoverIntent.minified.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\paypal-button.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="navigationbar.ascx" />
+    <Content Include="paypal.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="styles\adminmaster.css" />
+    <Content Include="styles\jQuery.fancybox.css" />
+    <Content Include="styles\sitemaster.css" />
+    <Content Include="subcategory.aspx" />
+    <Content Include="userregistration.aspx" />
+    <Content Include="viewitem.aspx" />
+    <Content Include="yourcart.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\dataset\mastertables.xsc">
+      <DependentUpon>mastertables.xsd</DependentUpon>
+    </None>
+    <None Include="admin\dataset\mastertables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mastertables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="admin\dataset\mastertables.xss">
+      <DependentUpon>mastertables.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\RadSpell\de-DE.tdf" />
+    <None Include="App_Data\RadSpell\en-US.tdf" />
+    <None Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="masterpages\admin.Master" />
+    <Content Include="masterpages\sitemaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DOMAIN\DOMAIN.csproj">
+      <Project>{2109B7D3-6577-49CD-A6EE-874F63944CBD}</Project>
+      <Name>DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SERVICE\SERVICE.csproj">
+      <Project>{546E171B-C342-4B9E-9679-565427770631}</Project>
+      <Name>SERVICE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\items_large\" />
+    <Folder Include="images\items_small\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin\reports\rpt_BusinessPartnerAddressDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BusinessPartnerAddressDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_ItemDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ItemDetails1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_ItemPurchasingFeedbackDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ItemPurchasingFeedbackDetails1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_ItemPurchasingFeedbackTypeDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ItemPurchasingFeedbackTypeDetails1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_SubCategoryDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SubCategoryDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_CategoryDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_CategoryDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_BusinessPartnerReferenceDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BusinessPartnerReferenceDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\reports\rpt_UserDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_UserDetails1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
