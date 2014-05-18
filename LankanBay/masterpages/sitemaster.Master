@@ -53,7 +53,6 @@
         }
         .style6
         {
-            height: 28px;
             text-align: left;
         }
         .style7
@@ -62,7 +61,6 @@
         }
         .style8
         {
-            height: 28px;
         }
         </style>
    
@@ -77,8 +75,8 @@
 
     <div>
         <table cellpadding="5" cellspacing="0" class="style1">
-
-            <tr class="topMenuArea">
+        <tr class="topMenuArea" style="height:1px;" > <td colspan="3"> </td></tr>
+            <tr >
             <td colspan="3"  style="border-bottom:2px solid #CCC">
 
                 <table cellpadding="0" cellspacing="0" width="100%">
@@ -98,8 +96,9 @@
                                     </td>
 
                                     <td width="12%">
-                                    &nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
-                                        Customer Support
+                                    &nbsp;&nbsp; |&nbsp;&nbsp; &nbsp;
+                                        <asp:LinkButton ID="btnCustomerSupport" runat="server" Font-Bold="True" 
+                                            onclick="btnCustomerSupport_Click">Customer Support</asp:LinkButton>
                                     </td>
 
                                     <td width="12%" class="style7">
@@ -206,7 +205,7 @@
                 <td class="style6">
                     </td>
                <!-- MIDDLE CONTENT -->
-                <td class="style6" style="text-align:left">
+                <td class="style6" style="text-align:left" rowspan="2">
                
                     
 
@@ -222,19 +221,63 @@
                 <td class="style6">
                     </td>
             </tr>
+            <tr>
+                <td class="style6">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr >
+                <td class="style8">
+                    &nbsp;</td>
+                <td class="style8" rowspan="8" 
+                    
+                    style="vertical-align:bottom; text-align:center; background-color:White; padding:0px;">
+                    <hr  class="itemSeparator"/>
+                <img src="../images/footerimage.png" width="100%"/>
+               </td>
+                <td class="style8">
+                    &nbsp;</td>
+            </tr>
+            <tr >
+                <td class="style8">
+                   </td>
+                <td class="style8">
+                    &nbsp;</td>
+            </tr>
+            <tr >
+                <td class="style8">
+                    &nbsp;</td>
+                <td class="style8">
+                    &nbsp;</td>
+            </tr>
             <tr style="background-color:#CCC">
                 <td class="style8">
                     </td>
                 <td class="style8">
                     </td>
-                <td class="style8">
-                    </td>
             </tr>
-            <tr style="background-color:Gray">
+            <tr style="background-color:#1475BA">
                 <td>
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
+            </tr>
+            <tr style="background-color:#1475BA">
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr style="background-color:#1475BA">
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr style="background-color:#1475BA">
+                <td>
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>

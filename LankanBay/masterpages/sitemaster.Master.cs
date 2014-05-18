@@ -73,6 +73,25 @@ namespace LankanBay.masterpages
                 RadWindow1.AutoSize = false;
 
                 RadWindow1.Animation = Telerik.Web.UI.WindowAnimation.Fade;
+                RadWindow1.AnimationDuration = 2000;
+               
+                RadWindowManager1.EnableViewState = false;
+                RadWindowManager1.Windows.Add(RadWindow1);
+            }
+            if (CommonParameterNames.MessageBoxType.CusSupport == messegeBoxType)
+            {
+                RadWindow1.Width = 650;
+                RadWindow1.Height = 500;
+                RadWindow1.NavigateUrl = messege;
+                RadWindow1.VisibleOnPageLoad = true;
+                RadWindow1.VisibleTitlebar = false;
+                RadWindow1.VisibleStatusbar = false;
+                RadWindow1.Modal = true;
+                RadWindow1.AutoSize = false;
+
+                RadWindow1.Animation = Telerik.Web.UI.WindowAnimation.Fade;
+                RadWindow1.AnimationDuration = 2000;
+               
 
                 RadWindowManager1.EnableViewState = false;
                 RadWindowManager1.Windows.Add(RadWindow1);
@@ -87,6 +106,10 @@ namespace LankanBay.masterpages
                 RadWindow1.VisibleStatusbar = false;
                 RadWindow1.Modal = true;
                 RadWindow1.AutoSize = false;
+
+                RadWindow1.Animation = Telerik.Web.UI.WindowAnimation.Fade;
+                RadWindow1.AnimationDuration = 2000;
+
                 RadWindowManager1.EnableViewState = false;
                 RadWindowManager1.Windows.Add(RadWindow1);
             }
@@ -166,6 +189,11 @@ namespace LankanBay.masterpages
         protected void btnDailyDeals_Click(object sender, EventArgs e)
         {
             Response.Redirect(CommonParameterNames.PageURLs.ItemSearch + "&dailydeals=1");
+        }
+
+        protected void btnCustomerSupport_Click(object sender, EventArgs e)
+        {
+            MessageBox(CommonParameterNames.MessageBoxType.CusSupport, "../customer_support.aspx");
         }
 
 

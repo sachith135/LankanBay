@@ -97,6 +97,9 @@
         DataTable dtItemImageDetails = new DataTable();
         DataTable dtPaymentOptionDetails = new DataTable();
         DataTable dtItemPurchaseFeedbackDetails = new DataTable();
+        DataTable dtSingleItemDetails = new DataTable();
+
+        string itemRatings = "";
 
         dtPaymentOptionDetails = paymetOptionDetailsService.SelectPaymentOptions();
 
@@ -231,10 +234,40 @@
                                 </p>
                             </td>
                             <td>
-                                <img src="images/toprateditem.png" width="30px" title="Top Rated Item" />
+                                <td>
+                                        <%
+itemDetails.ItemId = Convert.ToInt32(dtItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.ItemId].ToString());
+dtSingleItemDetails = itemDetailsService.SelectThisItemDetailsForMainPage(itemDetails);
+if (Convert.ToDecimal(dtSingleItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.ItemRatings]) > 40)
+{
+    itemRatings = "Top Rated Item (" + dtSingleItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.ItemRatings].ToString() + "%)";
+    Response.Write("<img src='images/toprateditem.png' width='30px' title='" + itemRatings + "'/>");
+}
+else
+{
+    itemRatings = "Item Ratings (" + dtSingleItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.ItemRatings].ToString() + "%)";
+    Response.Write("<img src='images/rateditem.png' width='30px' title='" + itemRatings + "'/>");
+}
+                                                        %>             
+                                 </td>
                             </td>
                             <td>
-                                <img src="images/topratedseller.png" width="30px" title="Top Rated Seller" />
+                                
+                                                        <%
+                                                       
+itemPurchasingFeedbackDetails.ReceiversBspId = Convert.ToInt32(dtItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.BSPId].ToString());
+dtItemPurchaseFeedbackDetails = itemPurchasingFeedbackDetailsService.SelectSellersTotalFeedback(itemPurchasingFeedbackDetails);
+if (Convert.ToDecimal(dtItemPurchaseFeedbackDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Feedback.ItemPurchasingFeedbackDetails.SellerTotalPositiveFeedback].ToString()) > Convert.ToDecimal(dtItemPurchaseFeedbackDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Feedback.ItemPurchasingFeedbackDetails.SellerTotalNegetiveFeedback].ToString()))
+{
+    itemRatings = "Top Rated Seller : Positive Feedback (" + dtItemPurchaseFeedbackDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Feedback.ItemPurchasingFeedbackDetails.SellerTotalPositiveFeedback].ToString() + "%)";
+    Response.Write("<img src='images/topratedseller.png' width='30px' title='" + itemRatings + "'/>");
+}
+else
+{
+    itemRatings = "Sellers Positive Ratings (" + dtItemPurchaseFeedbackDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Feedback.ItemPurchasingFeedbackDetails.SellerTotalPositiveFeedback].ToString() + "%)";
+    Response.Write("<img src='images/rateditem.png' width='30px' title='" + itemRatings + "'/>");
+}
+                                                        %>
                             </td>
                         </tr>
                     </table>
@@ -469,7 +502,7 @@
                             <td style="text-align: left; vertical-align: middle;" class="style24">
                                 <telerik:radnumerictextbox id="txtRequestedQty" runat="server" width="80px" value="1"
                                     xmlns:telerik="telerik.web.ui">
-                                        <numberformat decimaldigits="0" groupseparator="" /> </telerik:radnumerictextbox>
+                                              <numberformat decimaldigits="0" groupseparator="" /> </telerik:radnumerictextbox>
                             </td>
                             <td style="vertical-align: middle">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="**"
@@ -498,12 +531,14 @@
             <tr>
                 <td width="100%" style="text-align: left; max-width: 100%; min-width: 100%; z-index: 1000;">
                     <div id="IframeWrapper" style="position: relative;">
+
                         <div id="iframeBlocker" style="position: absolute; top: 0; left: 0; width: 100%;
-                            height: 720px">
+                            height: 900px">
                         </div>
-                        <% Response.Write("<iframe id='myiframe' scrolling='auto' runat='server' src='" + dtItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.WebPageURL].ToString() + "' width='100%' height='720px'  style='z-index:-100;'>");
+                        <% Response.Write("<iframe id='myiframe' scrolling='auto' runat='server' src='" + dtItemDetails.Rows[0][CommonParameterNames.CommonTableColumnName.Inventory.ItemDetails.WebPageURL].ToString() + "' width='100%' height='900px'  style='z-index:-100;'>");
                         %>
                         </iframe>
+
                     </div>
                 </td>
             </tr>

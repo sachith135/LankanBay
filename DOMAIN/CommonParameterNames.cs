@@ -28,6 +28,7 @@ namespace DOMAIN
             public static string WarnningMessage = "WarnningMessage";
 
             public static string MyCart = "MyCart";
+            public static string CusSupport = "CusSupport";
         }
 
         public static class PageURLs

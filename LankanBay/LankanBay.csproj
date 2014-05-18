@@ -72,6 +72,20 @@
     <Compile Include="admin\admin_add_subcatrgory.aspx.designer.cs">
       <DependentUpon>admin_add_subcatrgory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\admin_feedback_types.aspx.cs">
+      <DependentUpon>admin_feedback_types.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_feedback_types.aspx.designer.cs">
+      <DependentUpon>admin_feedback_types.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_password_reset_questions.aspx.cs">
+      <DependentUpon>admin_password_reset_questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_password_reset_questions.aspx.designer.cs">
+      <DependentUpon>admin_password_reset_questions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\dataset\mastertables.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -195,6 +209,20 @@
     <Compile Include="checkout.aspx.designer.cs">
       <DependentUpon>checkout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="customer_support.aspx.cs">
+      <DependentUpon>customer_support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer_support.aspx.designer.cs">
+      <DependentUpon>customer_support.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.aspx.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot_password.aspx.designer.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pay_on_delivery.aspx.cs">
       <DependentUpon>pay_on_delivery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -312,6 +340,8 @@
   <ItemGroup>
     <Content Include="admin\admin_add_catrgory.aspx" />
     <Content Include="admin\admin_add_subcatrgory.aspx" />
+    <Content Include="admin\admin_feedback_types.aspx" />
+    <Content Include="admin\admin_password_reset_questions.aspx" />
     <Content Include="admin\MessageBoxTemplete.aspx" />
     <Content Include="admin\navigationbar.ascx" />
     <Content Include="admin\reprot_viwer.aspx" />
@@ -322,8 +352,13 @@
     <Content Include="category.aspx" />
     <Content Include="bsp_customer_profile.aspx" />
     <Content Include="checkout.aspx" />
+    <Content Include="customer_support.aspx" />
+    <Content Include="forgot_password.aspx" />
     <Content Include="images\back.png" />
     <Content Include="images\changepaymentoption.png" />
+    <Content Include="images\footerimage.png" />
+    <Content Include="images\lankanbay_home_page_slider.jpg" />
+    <Content Include="images\lankanbay_home_page_slider_side.jpg" />
     <Content Include="images\paymentoption_payondelivery.png" />
     <Content Include="images\payondelevery.png" />
     <Content Include="pay_on_delivery.aspx" />
@@ -516,7 +551,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

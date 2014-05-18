@@ -68,3 +68,10 @@ C:\Users\ASUS\Documents\GitHub\LankanBay\DATA\bin\DOMAIN.pdb
 C:\Users\ASUS\Documents\GitHub\LankanBay\DATA\obj\Debug\DATA.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Documents\GitHub\LankanBay\DATA\obj\Debug\DATA.dll
 C:\Users\ASUS\Documents\GitHub\LankanBay\DATA\obj\Debug\DATA.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\bin\DATA.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\bin\DATA.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\bin\DOMAIN.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\bin\DOMAIN.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\obj\Debug\DATA.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\DATA\obj\Debug\DATA.pdb

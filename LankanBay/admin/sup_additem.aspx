@@ -28,15 +28,6 @@
             text-align: left;
             width: 18px;
         }
-        .style21
-        {
-            text-align: left;
-            width: 8px;
-        }
-        .style22
-        {
-            width: 8px;
-        }
         .style23
         {
             text-align: left;
@@ -45,7 +36,7 @@
         }
         .style25
         {
-            width: 49px;
+            width: 30px;
             text-align: left;
         }
         .style26
@@ -71,8 +62,6 @@
         <div class="pageContainer">
             <table cellpadding="2" width="950px">
                 <tr>
-                    <td style="text-align: left; padding: 3px;" class="style22">
-                    </td>
                     <td colspan="7" style="text-align: left; padding: 3px;">
                         <b><span class="style12">Add / Edit Item Details</span></b>
                         <hr class="separator" />
@@ -82,9 +71,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Supplier
                     </td>
@@ -106,7 +92,7 @@
                         :
                     </td>
                     <td class="style27">
-                        <telerik:RadTextBox ID="txtItemDescrption" runat="server" Width="280px" 
+                        <telerik:RadTextBox ID="txtItemDescrption" runat="server" Width="270px" 
                             MaxLength="88">
                         </telerik:RadTextBox>
                     </td>
@@ -116,9 +102,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Category
                     </td>
@@ -141,7 +124,7 @@
                         :
                     </td>
                     <td class="style27">
-                        <telerik:RadNumericTextBox ID="txtUnitPrice" runat="server" Width="280px">
+                        <telerik:RadNumericTextBox ID="txtUnitPrice" runat="server" Width="270px">
                         </telerik:RadNumericTextBox>
                     </td>
                     <td class="style7">
@@ -150,9 +133,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Sub Category
                     </td>
@@ -174,7 +154,8 @@
                         :
                     </td>
                     <td class="style27">
-                        <telerik:RadNumericTextBox ID="txtDeleveryChargers" runat="server" Width="280px">
+                        <telerik:RadNumericTextBox ID="txtDeleveryChargers" runat="server" 
+                            Width="270px">
                         </telerik:RadNumericTextBox>
                     </td>
                     <td class="style7">
@@ -183,9 +164,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Item Name
                     </td>
@@ -206,7 +184,7 @@
                         :
                     </td>
                     <td class="style27">
-                        <telerik:RadTextBox ID="txtDeliveryDescription" runat="server" Width="280px">
+                        <telerik:RadTextBox ID="txtDeliveryDescription" runat="server" Width="270px">
                         </telerik:RadTextBox>
                     </td>
                     <td class="style7">
@@ -215,9 +193,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Delivery Option
                     </td>
@@ -240,7 +215,7 @@
                         :
                     </td>
                     <td class="style27">
-                        <telerik:RadTextBox ID="txtReturnDescription" runat="server" Width="280px">
+                        <telerik:RadTextBox ID="txtReturnDescription" runat="server" Width="270px">
                         </telerik:RadTextBox>
                     </td>
                     <td class="style7">
@@ -249,9 +224,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Item Condition
                     </td>
@@ -272,7 +244,7 @@
                         :
                     </td>
                     <td class="style27">
-                     <telerik:RadTextBox ID="txtWarrentyDescription" runat="server" Width="280px">
+                     <telerik:RadTextBox ID="txtWarrentyDescription" runat="server" Width="270px">
                         </telerik:RadTextBox>
                     </td>
                     <td class="style7">
@@ -280,9 +252,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style28">
                         Purchasing Method
                     </td>
@@ -303,7 +272,7 @@
                         &nbsp;:
                     </td>
                     <td class="style27">
-                        <telerik:RadTextBox ID="txtItemWebPageURL" Runat="server" Width="280px">
+                        <telerik:RadTextBox ID="txtItemWebPageURL" Runat="server" Width="270px">
                         </telerik:RadTextBox>
                         </td>
                     <td class="style7">
@@ -312,8 +281,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;</td>
                     <td class="style28">
                         Buyer Protection
                     </td>
@@ -342,8 +309,6 @@
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;</td>
                     <td class="style26" colspan="7">
                     * imp : Item descrition will appear in the item page above the item image. Make sure you have enter fully detail description with suppotive search tags. 
                        
@@ -356,8 +321,6 @@
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;</td>
                     <td class="style28">
                         Quantity In Hand</td>
                     <td class="style14">
@@ -375,7 +338,7 @@
                     <td class="style18">
                         :</td>
                     <td class="style27">
-                        <telerik:RadNumericTextBox ID="txtReOrderLevel" Runat="server" Width="280px">
+                        <telerik:RadNumericTextBox ID="txtReOrderLevel" Runat="server" Width="270px">
                         </telerik:RadNumericTextBox>
                     </td>
                     <td class="style7">
@@ -384,9 +347,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td class="style23" colspan="7">
                         <hr class="separator" style="margin-bottom:5px"/>
                         Currunt Items
@@ -397,9 +357,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="style21">
-                        &nbsp;
-                    </td>
                     <td colspan="7" style="text-align: left; padding-bottom:10px;">
                         <telerik:RadGrid ID="dgSellersItems" runat="server" AutoGenerateColumns="False" GridLines="None"
                             AllowFilteringByColumn="True" AllowPaging="True" AllowSorting="True" 

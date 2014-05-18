@@ -165,3 +165,16 @@ C:\Users\ASUS\Documents\GitHub\LankanBay\LankanBay\bin\DATA.pdb
 C:\Users\ASUS\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.dll
 C:\Users\ASUS\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\LankanBay.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\LankanBay.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\DOMAIN.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\SERVICE.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\Telerik.Web.UI.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\DATA.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\DOMAIN.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\SERVICE.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\Telerik.Web.UI.xml
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\bin\DATA.pdb
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.dll
+C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.pdb

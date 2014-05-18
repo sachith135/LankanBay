@@ -192,10 +192,33 @@ namespace LankanBay
             RadWindowManager1.Windows.Add(RadWindow1);
         }
 
+        public void ForgotPassword()
+        {
+            RadWindow1.Width = 650;
+            RadWindow1.Height = 430;
+            RadWindow1.NavigateUrl = "~/forgot_password.aspx";
+            RadWindow1.VisibleOnPageLoad = true;
+            RadWindow1.VisibleTitlebar = false;
+            RadWindow1.VisibleStatusbar = false;
+            RadWindow1.Modal = true;
+            RadWindow1.AutoSize = false;
+
+            RadWindow1.Animation = Telerik.Web.UI.WindowAnimation.Fade;
+            RadWindow1.AnimationDuration = 2000;
+
+            RadWindowManager1.EnableViewState = false;
+            RadWindowManager1.Windows.Add(RadWindow1);
+        }
+
         protected void lnkBtnUserRegistration_Click(object sender, EventArgs e)
         {
             Session[CommonParameterNames.URLParameters.IsFromLoginPage] = true;
             UserRegistration();            
+        }
+
+        protected void btnForgotPassword_Click(object sender, EventArgs e)
+        {
+            ForgotPassword();
         }
     }
 }

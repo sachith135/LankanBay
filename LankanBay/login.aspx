@@ -298,7 +298,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
                                     </tr>
                                     <tr>
                                         <td class="style17" colspan="4" >
-                                        <a href="" target="_blank" style="color:Navy">Forgot your password or your username?</a>    
+                                            <asp:LinkButton ID="btnForgotPassword" runat="server" onclick="btnForgotPassword_Click">Forgot your password or your username?</asp:LinkButton>
+                                            <br />
                                             
                                         <a href="" target="_blank" style="color:Navy"><b>Don&#39;t&nbsp; you have an account?</b> </a>
                                             <asp:LinkButton ID="lnkBtnUserRegistration" runat="server" ForeColor="Red" 
