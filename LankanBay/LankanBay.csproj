@@ -86,6 +86,20 @@
     <Compile Include="admin\admin_password_reset_questions.aspx.designer.cs">
       <DependentUpon>admin_password_reset_questions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\admin_payment_options.aspx.cs">
+      <DependentUpon>admin_payment_options.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_payment_options.aspx.designer.cs">
+      <DependentUpon>admin_payment_options.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_view_notification_quequ.aspx.cs">
+      <DependentUpon>admin_view_notification_quequ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_view_notification_quequ.aspx.designer.cs">
+      <DependentUpon>admin_view_notification_quequ.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\dataset\mastertables.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -342,6 +356,8 @@
     <Content Include="admin\admin_add_subcatrgory.aspx" />
     <Content Include="admin\admin_feedback_types.aspx" />
     <Content Include="admin\admin_password_reset_questions.aspx" />
+    <Content Include="admin\admin_payment_options.aspx" />
+    <Content Include="admin\admin_view_notification_quequ.aspx" />
     <Content Include="admin\MessageBoxTemplete.aspx" />
     <Content Include="admin\navigationbar.ascx" />
     <Content Include="admin\reprot_viwer.aspx" />
@@ -551,7 +567,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
