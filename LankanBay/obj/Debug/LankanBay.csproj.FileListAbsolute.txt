@@ -191,3 +191,16 @@ C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\bin\DATA.pdb
 C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.dll
 C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\LankanBay.pdb
+E:\MyHDFinal\LankanBay\LankanBay\bin\LankanBay.dll
+E:\MyHDFinal\LankanBay\LankanBay\bin\LankanBay.pdb
+E:\MyHDFinal\LankanBay\LankanBay\bin\DOMAIN.dll
+E:\MyHDFinal\LankanBay\LankanBay\bin\SERVICE.dll
+E:\MyHDFinal\LankanBay\LankanBay\bin\Telerik.Web.UI.dll
+E:\MyHDFinal\LankanBay\LankanBay\bin\DATA.dll
+E:\MyHDFinal\LankanBay\LankanBay\bin\DOMAIN.pdb
+E:\MyHDFinal\LankanBay\LankanBay\bin\SERVICE.pdb
+E:\MyHDFinal\LankanBay\LankanBay\bin\Telerik.Web.UI.xml
+E:\MyHDFinal\LankanBay\LankanBay\bin\DATA.pdb
+E:\MyHDFinal\LankanBay\LankanBay\obj\Debug\LankanBay.csprojResolveAssemblyReference.cache
+E:\MyHDFinal\LankanBay\LankanBay\obj\Debug\LankanBay.dll
+E:\MyHDFinal\LankanBay\LankanBay\obj\Debug\LankanBay.pdb

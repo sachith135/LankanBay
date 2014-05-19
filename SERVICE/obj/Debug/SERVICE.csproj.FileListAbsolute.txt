@@ -106,3 +106,12 @@ C:\Users\Administrator\Documents\GitHub\LankanBay\SERVICE\bin\DOMAIN.pdb
 C:\Users\Administrator\Documents\GitHub\LankanBay\SERVICE\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\LankanBay\SERVICE\obj\Debug\SERVICE.dll
 C:\Users\Administrator\Documents\GitHub\LankanBay\SERVICE\obj\Debug\SERVICE.pdb
+E:\MyHDFinal\LankanBay\SERVICE\bin\SERVICE.dll
+E:\MyHDFinal\LankanBay\SERVICE\bin\SERVICE.pdb
+E:\MyHDFinal\LankanBay\SERVICE\bin\DATA.dll
+E:\MyHDFinal\LankanBay\SERVICE\bin\DOMAIN.dll
+E:\MyHDFinal\LankanBay\SERVICE\bin\DATA.pdb
+E:\MyHDFinal\LankanBay\SERVICE\bin\DOMAIN.pdb
+E:\MyHDFinal\LankanBay\SERVICE\obj\Debug\SERVICE.csprojResolveAssemblyReference.cache
+E:\MyHDFinal\LankanBay\SERVICE\obj\Debug\SERVICE.dll
+E:\MyHDFinal\LankanBay\SERVICE\obj\Debug\SERVICE.pdb
