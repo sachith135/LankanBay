@@ -53,3 +53,8 @@ C:\Users\Trish\Documents\GitHub\LankanBay\DOMAIN\bin\DOMAIN.pdb
 C:\Users\Trish\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Trish\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.dll
 C:\Users\Trish\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.pdb
+C:\Users\Administrator\Documents\GitHub\LankanBay\DOMAIN\bin\DOMAIN.dll
+C:\Users\Administrator\Documents\GitHub\LankanBay\DOMAIN\bin\DOMAIN.pdb
+C:\Users\Administrator\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.dll
+C:\Users\Administrator\Documents\GitHub\LankanBay\DOMAIN\obj\Debug\DOMAIN.pdb

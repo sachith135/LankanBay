@@ -78,7 +78,7 @@ namespace LankanBay.masterpages
                 RadWindowManager1.EnableViewState = false;
                 RadWindowManager1.Windows.Add(RadWindow1);
             }
-            if (CommonParameterNames.MessageBoxType.CusSupport == messegeBoxType)
+            else if (CommonParameterNames.MessageBoxType.CusSupport == messegeBoxType)
             {
                 RadWindow1.Width = 650;
                 RadWindow1.Height = 500;

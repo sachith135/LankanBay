@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DBConnection-Web.config Connection String" description="DBConnection Connection String used in web.config by the application to access the database." defaultvalue="Data Source=TRISH-PC;Initial Catalog=LankanBay;Persist Security Info=True;User ID=sa;Password=tommya;" tags="SqlConnectionString">
+  <parameter name="DBConnection-Web.config Connection String" description="DBConnection Connection String used in web.config by the application to access the database." defaultvalue="Data Source=firedragon;Initial Catalog=LankanBay;Persist Security Info=True;User ID=sa;Password=tommya;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\web\.config$" match="/configuration/connectionStrings/add[@name='DBConnection']/@connectionString" />
   </parameter>
 </parameters>

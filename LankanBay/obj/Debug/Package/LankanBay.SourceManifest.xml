@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <contentPath path="C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" />
-  <setAcl path="C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\Trish\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <contentPath path="C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" />
+  <setAcl path="C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\Administrator\Documents\GitHub\LankanBay\LankanBay\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>
